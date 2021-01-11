@@ -1,3 +1,10 @@
+const button = document.getElementById('newquote');
+
+button.addEventListener('click', event => {
+    console.log("it works");
+    fetchSimpsonQuote();
+});
+
 function fetchSimpsonQuote() {
     const url = `https://simpsons-quotes-api.herokuapp.com/quotes`;
     axios.get(url)
